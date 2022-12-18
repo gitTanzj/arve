@@ -1,0 +1,20 @@
+{
+    "Kalle":[
+        {
+            "summa":5.61,
+            "selgitus":"ostutrip"
+        },
+        {
+            "summa":6.43,
+            "selgitus":"kingitus"
+        }
+    ],
+    "Sass":[
+        {
+            "summa":1.20,
+            "selgitus":"osta.ee",
+            "id":3
+        }
+    ]
+
+}

@@ -1,0 +1,65 @@
+.App{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    min-height: 700px;
+}
+.header{
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #bababa;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #bababa;
+    color:#464646;
+    grid-column: 1;
+    margin:10px;    
+}
+.space{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+.calc{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr;
+}
+.create{
+    grid-column: 2;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+.forms input{
+    width: 80%;
+    margin:10px;
+}
+.create button{
+    width: 80%;
+    height: 40%;
+    border: 2px solid #bababa;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #bababa;
+    color:#464646;
+    transition: 200ms;
+    background-color: white;
+}
+.create button:hover{
+    background-color: #ebebeb;
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #bababa;
+    cursor: pointer;
+}
+.list{
+    border: 2px solid grey;
+    width: 100%;
+}
