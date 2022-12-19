@@ -6,7 +6,7 @@ const Create: FunctionComponent = () => {
     <div className="create">
         
         <div className="forms">
-            <input type="text" placeholder="Summa.."/>
+            <input type="text" placeholder="Summa.." pattern="[0-9]"/>
             <input type="text" placeholder="Selgitus.."/>
         </div>
         <button>Lisa</button>
