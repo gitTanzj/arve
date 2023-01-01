@@ -1,19 +1,16 @@
 .App{
-    background-color: white;
+    border-radius: 2px;
     width: 60%;
     margin: auto;
-    min-height: 900px;
-    box-shadow: 0px 6px 6px #bababa;
+    min-height: 1080px;
+    background-color: white;
+    color: black;
 }
 .header{
     text-align: center;
-    background-color: white;
-    border: 2px solid #bababa;
-    border-radius: 5px;
-    box-shadow: 0 3px 0 #bababa;
-    color:#464646;
+    border-bottom: 4px solid black;
     grid-column: 1;
-    margin: 20px;
+    margin: 10px;
     height: auto;
     max-height: 100px;    
 }
@@ -52,17 +49,15 @@
     padding:10px;
     width: 80%;
     height: 40%;
-    border: 2px solid #bababa;
+    border: 2px solid black;
     border-radius: 5px;
-    box-shadow: 0 3px 0 #bababa;
-    color:#464646;
-    transition: 200ms;
+    box-shadow: 0 3px 0 black;
     background-color: white;
+    transition: 200ms;
 }
 .create button:hover{
-    background-color: #ebebeb;
     transform: translateY(1px);
-    box-shadow: 0 2px 0 #bababa;
+    box-shadow: 0 2px 0 black;
     cursor: pointer;
 }
 .create button:active{
@@ -81,7 +76,7 @@
     justify-content: space-evenly;
     width: 80%;
     padding:10px;
-    border: 2px solid #bababa;
+    border: 2px solid black;
     border-radius: 5px;
 }
 .list-sum{
@@ -89,17 +84,17 @@
     justify-content: space-evenly;
     width: 80%;
     padding:10px;
-    border: 2px solid black;
+    border-bottom: 4px solid black;
     font-weight: bolder;
-    border-radius: 5px;
 }
 .create input{
-    border: 2px solid #bababa;
+    border: 2px solid black;
     border-radius: 5px;
     padding: 10px;
-    transition: 150ms;
+    transition: 200ms;
     outline:none;
+    color:#616161;
 }
-.create input:focus{
-    border: 2px solid black;
+.create input:focus{    
+    color: black;
 }
