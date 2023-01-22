@@ -21,7 +21,6 @@
 }
 .calc{
     display: grid;
-    grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr;
 }
 .create{
@@ -54,6 +53,7 @@
     box-shadow: 0 3px 0 black;
     background-color: white;
     transition: 200ms;
+    outline:none;
 }
 .create button:hover{
     transform: translateY(1px);
@@ -84,7 +84,7 @@
     justify-content: space-evenly;
     width: 80%;
     padding:10px;
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
     font-weight: bolder;
 }
 .create input{

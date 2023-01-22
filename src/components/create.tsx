@@ -1,15 +1,25 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 
 
-const Create: FunctionComponent = () => {
+
+const Create: FunctionComponent = () => { 
+
+    const [summa, setSumma] = useState("")
+    const [selgitus, setSelgitus] = useState("")
+
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        alert(event.target)
+    }
+
     return (
     <div className="create">
         
-        <div className="forms">
-            <input type="text" placeholder="Summa.." pattern="[0-9]"/>
-            <input type="text" placeholder="Selgitus.."/>
-        </div>
-        <button>Lisa</button>
+        <form id="createForm" className="forms" onSubmit={handleSubmit}>
+            <input type="text" placeholder="Summa.." pattern="^[0-9]+.[0-9]{,2}$" onChange={(event) => {setSumma(event.target.value)}}/>
+            <input type="text" placeholder="Selgitus.." onChange={(event) => {setSelgitus(event.target.value)}}/>
+            <button type="submit">Lisa</button>
+        </form>
+        
     </div>
     );
 }
